@@ -1,0 +1,83 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(17, 18, 34);
+    color: #ffffff;
+  }
+
+  #google_search{
+      position: fixed;
+      left: 350px;
+      top: 200px;
+      color: rgb(255, 208, 0);
+  }
+
+  #youtube_search{
+    position: fixed;
+    left: 350px;
+    top: 250px;
+
+    color: red;
+}
+
+  #list_users{
+      position: fixed;
+      left: 20px;
+      top: 130px;
+      width: 20%;
+      max-width: 1200px;
+      text-align: center;
+  }
+  #list_users div {
+    background-color: rgb(61, 113, 255);
+    color: white;
+    padding: 5px;
+  }
+
+  #list_users div:nth-child(2n) {
+    color: black;
+    background-color: rgb(61, 113, 255);
+  }
+
+
+  #header{
+      position: fixed;
+      left: 7px;
+      font-size: 40px;
+      font-weight: bolder;
+      color: chartreuse;
+  }
+
+  #message-container {
+    position: absolute;
+    bottom: 10px;
+    width: 50%;
+    max-width: 1200px;
+    right: 10px;
+  }
+
+  #message-container div {
+    background-color: rgb(0, 102, 255);
+    padding: 7px;
+  }
+
+  #message-container div:nth-child(2n) {
+    background-color: rgb(94, 169, 253);
+  }
+
+  #send-container {
+  
+    position: fixed;
+    bottom: 10px;
+    left: 2px;
+    background-color: rgb(0, 4, 255);
+    max-width: 1200px;
+    width: 40%;
+    display: flex;
+  }
+
+  #message-input {
+    flex-grow: 1;
+  }

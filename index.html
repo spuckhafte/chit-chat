@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Chit Chat</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <form id="google_search" action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+        Search google: <br>
+        <input name="sitesearch" type="hidden">
+        <input autocomplete="on" class="form-control search" name="q" required="required"  type="text">
+        <button class="button" type="submit">Search</button>
+    </form>
+
+    <form id="youtube_search" action="https://www.youtube.com/results" class="searchform" method="get" name="searchform" target="_blank">
+        Search Youtube: <br>
+        <input id="search_google" name="sitesearch" type="hidden">
+        <input id="search_now" autocomplete="on" class="form-control search" name="q" required="required"  type="text">
+        <button class="button" type="submit">Search</button>
+    </form>
+
+
+    <div id="header">Chit Chat<br>
+    <span style="font-size:large;"id="user_name"></span><span style="font-size: large;">'s Chat</span></div>
+
+    <div id="list_users"></div>
+
+    <div id="message-container"></div>
+
+    <form id="send-container">
+        <input autofocus autocomplete = "off" type="text" placeholder="Type your message here..." 
+        id="message-input" style="color: rgb(59, 117, 0); background-color: whitesmoke;height: 30px;
+        font-size: larger;">
+
+          <button id="send-button" type="submit" style=" cursor: pointer; border: none; padding: 7px; 
+          color:white;background-color: rgb(8, 90, 243);font-size: small;color: chartreuse; 
+          font-weight: bolder;">Send</button>
+    </form>
+ 
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+</body>
+</html>
