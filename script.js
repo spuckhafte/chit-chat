@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000')
+const socket = io(`http://localhost:${3000||process.env.PORT}`)
 const messageContainer = document.getElementById('message-container')
 const userContainer = document.getElementById('list_users')
 const messageForm = document.getElementById('send-container')
